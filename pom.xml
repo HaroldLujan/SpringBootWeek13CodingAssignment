@@ -24,18 +24,30 @@
   <dependencies>
   
   <!-- OpenAPI dependency ================================================================= -->
-    <dependency>
-      <groupId>org.springdoc</groupId>
-      <artifactId>springdoc-openapi-ui</artifactId>
-      <version>1.5.10</version>
-    </dependency>
-    
-  <!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-ui -->
- <dependency>
+<dependency>
     <groupId>org.springdoc</groupId>
     <artifactId>springdoc-openapi-ui</artifactId>
-    <version>1.6.8</version>
- </dependency>
+    <version>1.6.9</version>
+</dependency>
+
+    <!--Database Dependency-->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+</dependency>
+    
+    <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-data-jdbc</artifactId>
+    
+</dependency>
+
+ <!--Test Dependency-->
+<dependency>
+    <groupId>com.h2database</groupId>
+    <artifactId>h2</artifactId>
+    <scope>test</scope>
+</dependency>
   
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -54,6 +66,8 @@
       <artifactId>lombok</artifactId>
       <optional>true</optional>
     </dependency>
+    
+    
     <dependency>
     
       <groupId>org.springframework.boot</groupId>
